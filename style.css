@@ -1,0 +1,18 @@
+:root {
+    --charSize: 16px;
+};
+
+#typeContainer {
+
+}
+
+#textField {
+    font-size: var(--charSize);
+}
+
+#typeBlock {
+    display: inline-block;
+    width: 8px;
+    height: var(--charSize);
+    background-color: orange;
+}
