@@ -56,11 +56,6 @@ intervalTypeStartDelay = 2000;
 // interval between initialization + completion of typing string, and then start untyping
 intervalUnType = 0;
 
-// set type cursor to orange and start blinking animation
-function init() {
-    typeBlock.style.backgroundColor = 'orange';
-    startBlink();
-}
 
 // recursive function that adds a letter, then starts the function again with 50ms interval
 function typeWriter() {
@@ -121,5 +116,11 @@ function beginAllTyping(arrayOfMessages) {
     }
 };
 
+// set type cursor to orange and start blinking animation; begin typing all messages
+function init() {
+    typeBlock.style.backgroundColor = 'orange';
+    startBlink();
+    beginAllTyping(arrayOfMessagesA);
+}
+
 init();
-beginAllTyping(arrayOfMessagesA);
